@@ -22,19 +22,19 @@
                 var errors='';
                 var x = document.getElementsByName("id")[0].value;
                 if (x.length>10){
-                    errors += "ID has a maximum length of 10 characters\n";
+                    errors += "ID must not contain more than 10 characters\n";
                 }
                 var x = document.getElementsByName("age")[0].value;
                 if (x<10 || x>40){
-                    errors += "Minimum age = 10, Maximum age = 40\n";
+                    errors += "Age must be between 10 and 40\n";
                 }
                 var x = document.getElementsByName("email")[0].value;
                 if (x.indexOf("@")==-1){
-                    errors += "Email contains the character '@'\n";
+                    errors += "Email must contain '@'\n";
                 }
                 var x = document.getElementsByName("password")[0].value;
                 if (x.trim.length==0){
-                    errors += "Password field must not be empty\n";
+                    errors += "Password must not be empty\n";
                 }
                 if(errors.length != 0){
                     alert(errors);
