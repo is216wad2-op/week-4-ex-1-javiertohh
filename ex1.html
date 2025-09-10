@@ -33,10 +33,10 @@
                     errors += "Email must contain '@'\n";
                 }
                 var x = document.getElementsByName("password")[0].value;
-                if (x.trim.length==0){
+                if (x == ""){
                     errors += "Password must not be empty\n";
                 }
-                if(errors.length != 0){
+                if(errors != ""){
                     alert(errors);
                     return false;
                 }else{
